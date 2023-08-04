@@ -1,0 +1,17 @@
+version: '3'
+services:
+  postgres:
+    build:
+      context: ./DATABASE/postgresql
+      dockerfile: Dockerfile
+    image: postgresql
+    ports:
+      - 5432:5432
+
+  mongo:
+    build:
+      context: ./DATABASE/mongodb
+      dockerfile: Dockerfile
+    image: mongo
+    ports:
+      - 27017:27017
