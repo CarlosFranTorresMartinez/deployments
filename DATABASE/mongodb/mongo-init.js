@@ -1,6 +1,6 @@
 use tutorias;
 db.createUser({
     user: "develop",
-    pwd: "vallegrande",
+    pwd: "develop123",
     roles: [{ role: "readWrite", db: "tutorias" }]
 });

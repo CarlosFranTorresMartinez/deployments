@@ -1,7 +1,7 @@
 FROM postgres:alpine
 
 ENV POSTGRES_USER=develop
-ENV POSTGRES_PASSWORD=vallegrande
+ENV POSTGRES_PASSWORD=develop123
 
 COPY ./init.sql /docker-entrypoint-initdb.d/
 
