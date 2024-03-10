@@ -41,6 +41,12 @@ Una vez ingresa a la consola bash de kafka
 kafka-topics --bootstrap-server localhost:9092 --create --topic nombre_de_topico 
 ```
 
+Crear group id para consumir
+#### Para consumir un mensaje
+```bash
+kafka-console-consumer --bootstrap-server localhost:9092 --topic nombre_de_topico --group nombre_grupo_id
+```
+
 Ejecutaremos el siguiente comando para ver una lista y ver si se creo correctamente el topico
 ```bash
 kafka-topics --bootstrap-server localhost:9092 --list
@@ -57,3 +63,4 @@ kafka-console-producer --bootstrap-server localhost:9092 --topic asistencias
 ```bash
 kafka-console-consumer --bootstrap-server localhost:9092 --topic asistencias
 ```
+
